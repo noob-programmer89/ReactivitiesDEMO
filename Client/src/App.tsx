@@ -10,7 +10,7 @@ function App() {
     // fetch("https://localhost:5001/api/Activities")
     // .then(response => response.json())
     // .then(data => setActivities(data));
-    axios.get("https://localhost:5001/api/Activities")
+    axios.get<Activity[]>("https://localhost:5001/api/Activities")
     .then(response => setActivities(response.data));
   }, []);
 
