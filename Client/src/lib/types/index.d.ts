@@ -1,4 +1,4 @@
-type Activity{
+type Activity = {
     id: string
     title: string
     date: string
